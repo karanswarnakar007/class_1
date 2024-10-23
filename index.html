@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+    <style>
+        input{
+            font-size: 25px;
+padding: 10px;
+margin: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="1" id="n1">
+    <input type="button" value="2" id="n2">
+    <input type="button" value="3" id="n3">
+    <input type="button" value="4" id="n4">
+    <input type="button" value="5" id="n5">
+    <input type="button" value="6" id="n6">
+    <input type="button" value="7" id="n7">
+    <input type="button" value="8" id="n8">
+    <input type="button" value="9" id="n9">
+    <input type="button" value="10" id="n10">
+
+    <script>
+
+
+        function numGen() {
+            for (i = 1; i < 11; i++) {
+                document.write("<p> " + n + " X " + i + " = " + i * n + " </p>");
+            }
+        };
+        document.getElementById("n1").addEventListener("click", () => { n = document.getElementById("n1").value; numGen(); });
+        document.getElementById("n2").addEventListener("click", () => { n = document.getElementById("n2").value; numGen(); });
+        document.getElementById("n3").addEventListener("click", () => { n = document.getElementById("n3").value; numGen(); });
+        document.getElementById("n4").addEventListener("click", () => { n = document.getElementById("n4").value; numGen(); });
+        document.getElementById("n5").addEventListener("click", () => { n = document.getElementById("n5").value; numGen(); });
+        document.getElementById("n6").addEventListener("click", () => { n = document.getElementById("n6").value; numGen(); });
+        document.getElementById("n7").addEventListener("click", () => { n = document.getElementById("n7").value; numGen(); });
+        document.getElementById("n8").addEventListener("click", () => { n = document.getElementById("n8").value; numGen(); });
+        document.getElementById("n9").addEventListener("click", () => { n = document.getElementById("n9").value; numGen(); });
+        document.getElementById("n10").addEventListener("click", () => { n = document.getElementById("n10").value; numGen(); });
+
+
+
+
+    </script>
+</body>
+
+</html>
