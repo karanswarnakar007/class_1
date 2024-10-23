@@ -27,7 +27,7 @@ margin: 10px 20px;
     <input type="button" value="8" id="n8">
     <input type="button" value="9" id="n9">
     <input type="button" value="10" id="n10">
-
+<input type="button" value="Enter" id="search">
     <script>
 
 
@@ -39,8 +39,7 @@ margin: 10px 20px;
         document.getElementById("n1").addEventListener("click", () => { n = document.getElementById("n1").value; numGen(); });
         document.getElementById("n2").addEventListener("click", () => { n = document.getElementById("n2").value; numGen(); });
         document.getElementById("n3").addEventListener("click", () => { n = document.getElementById("n3").value; numGen(); });
-        document.getElementById("n4").addEventListener("click", () => { n = document.getElementById("n4").value; numGen(); });
-        document.getElementById("n5").addEventListener("click", () => { n = document.getElementById("n5").value; numGen(); });
+        document.getElementById("n4").addEventListener("click", () => { n = document.getElementById("n4").value; numGen(); });document.getElementById("n5").addEventListener("click", () => { n = document.getElementById("n5").value; numGen(); });
         document.getElementById("n6").addEventListener("click", () => { n = document.getElementById("n6").value; numGen(); });
         document.getElementById("n7").addEventListener("click", () => { n = document.getElementById("n7").value; numGen(); });
         document.getElementById("n8").addEventListener("click", () => { n = document.getElementById("n8").value; numGen(); });
@@ -48,7 +47,8 @@ margin: 10px 20px;
         document.getElementById("n10").addEventListener("click", () => { n = document.getElementById("n10").value; numGen(); });
 
 
-
+document.getElementById("search").addEventListener("click", () => { n = Prompt("Enter value"); numGen() });
+        
 
     </script>
 </body>
